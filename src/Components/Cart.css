@@ -1,0 +1,168 @@
+.cart{
+    text-align: center;
+    background-color: #655e4c;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+.cart h4{
+  color: white;
+}
+.cart-wrapper{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    padding: 20px;
+   
+   
+    
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  td {
+    color: white;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* img {
+    width: 50px;
+    height: 50px;
+  } */
+  
+  .cart-button {
+    padding: 10px 10px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cart-button:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .cart-css{
+    max-width: 80px;
+    max-height: 80px;
+  }
+ td:hover{
+ text-shadow: 50px;
+  cursor: pointer;
+ 
+    
+}
+h4 {
+  color: #333; /* Change the color to your preference */
+  text-align: center;
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Add these styles to your existing CSS file or style section */
+tfoot {
+  font-weight: bold;
+  background-color: #f2f2f2;
+ 
+}
+.total
+{
+  text-align: right;
+}
+tfoot td {
+  padding: 10px;
+  color: black;
+
+}
+.price{
+color: green;
+}
+.cart-button-quantity{
+  padding: 5px 5px;
+  border-radius: 50%;
+  color: red;
+  font-weight: bold;
+  border: none;
+}
+/* Original styles for large screens */
+
+.cart {
+  text-align: center;
+  background-color: #655e4c;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.cart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Updated styles for small screens (up to 768px) */
+
+@media only screen and (max-width: 768px) {
+  .cart {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .cart-wrapper {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .cart-css {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .cart-button {
+    padding: 8px 8px;
+  }
+
+  /* Hide the entire title column on smaller screens */
+   .cart-title {
+   
+   display: none;
+    
+  }
+ 
+}
+
+
+
+
+
+
+
+
+/* You can customize the styles based on your design preferences */
