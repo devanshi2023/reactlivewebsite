@@ -123,7 +123,6 @@ color: green;
   justify-content: space-around;
   padding: 20px;
 }
-
 /* Updated styles for small screens (up to 768px) */
 
 @media only screen and (max-width: 768px) {
@@ -151,8 +150,7 @@ color: green;
 
   /* Hide the entire title column on smaller screens */
    .cart-title {
-   
-   display: none;
+    display: none;
     
   }
  

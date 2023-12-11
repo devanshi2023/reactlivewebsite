@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -23,7 +23,20 @@ function App() {
   const [products, setProducts] = useState(Products)
   const [cart, setCart] = useState([])
   const[searched,setSearched] = useState([])
-  const[single,setSingleProduct] = useState([])
+  const[single,setSingleProduct] = useState({})
+
+  
+  useEffect(() => {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
+
+  // Save the cart to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   let navigate = useNavigate()
   // let [alert, setAlert] = useState({ show: false, message: '', head: '', success: false })

@@ -6,6 +6,9 @@ import './Search.css';
 const Search = () => {
   const { searched, products, cart, setCart,navigate,setSingleProduct } = useContext(MainContext);
 
+  
+  
+
   const AddToCart = (id) => {
     const product = products.find((x) => x.id === id);
     const existing = cart.find((x) => x.id === id);
@@ -33,7 +36,7 @@ const Search = () => {
 
   const AddToSingle = (product) => {
    
-    setSingleProduct(product);
+    localStorage.setItem("singleitem",JSON.stringify(product))
     navigate('/singleproduct');
    
   };
